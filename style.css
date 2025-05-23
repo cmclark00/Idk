@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+#pokemon-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pokemon-list li:hover {
+    background-color: #e9e9e9;
+}
+
+#pokemon-list li.selected {
+    background-color: #d1e7fd;
+    border-color: #0d6efd;
+}
+
+#selected-pokemon-details {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    min-height: 50px;
+}
+
+#selected-pokemon-details p:first-child {
+    margin-top: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#trade-status {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef;
+    border-left: 4px solid #007bff;
+}
+
+#trade-status p {
+    margin: 0;
+}
+
+.pokemon-item-name {
+    flex-grow: 1;
+}
+
+.select-pokemon-btn {
+    margin-left: 10px;
+    background-color: #28a745; /* Green */
+}
+
+.select-pokemon-btn:hover {
+    background-color: #1e7e34;
+}
+
+.select-pokemon-btn.selected-indicator {
+    background-color: #0d6efd; /* Blue, matching list item selection */
+    color: white;
+}

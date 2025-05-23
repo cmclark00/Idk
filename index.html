@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Trade Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon Storage & Trade</h1>
+
+        <div class="section">
+            <h2>Stored Pokémon</h2>
+            <ul id="pokemon-list">
+                <!-- Pokemon will be listed here by JavaScript -->
+                <li>Loading...</li>
+            </ul>
+            <div id="no-pokemon-message" style="display: none;">No Pokémon in storage.</div>
+        </div>
+
+        <div class="section">
+            <h2>Selected Pokémon Details</h2>
+            <div id="selected-pokemon-details">
+                <p>Select a Pokémon from the list above to see details.</p>
+                <!-- Details will be populated here -->
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Trade Operations</h2>
+            <button id="initiate-trade-button" disabled>Initiate Trade with Selected Pokémon</button>
+            <h3>Trade Status:</h3>
+            <div id="trade-status">
+                <p>Not initiated.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
